@@ -33,5 +33,12 @@ namespace CMP1005_WebAPIAssignment1_A00236910.Controllers
         {
             return Class1.Multiplication(num1, num2);
         }
+
+        //this method accepts two double data type numbers to return the result by dividing the first number by second number from CalculatorLogic shared library Division method
+        [HttpGet]
+        public double Divide([FromQuery] double num1, [FromQuery] double num2)
+        {
+            return Class1.Division(num1, num2);
+        }
     }
 }
