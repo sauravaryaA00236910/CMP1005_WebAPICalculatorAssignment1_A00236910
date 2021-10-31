@@ -26,5 +26,12 @@ namespace CMP1005_WebAPIAssignment1_A00236910.Controllers
         {
             return Class1.Subtraction(num1, num2);
         }
+
+        //this method accepts two double data type numbers to return the result by multiplying the two numbers from CalculatorLogic shared library Multiplication method
+        [HttpGet]
+        public double Multiply([FromQuery] double num1, [FromQuery] double num2)
+        {
+            return Class1.Multiplication(num1, num2);
+        }
     }
 }
