@@ -19,5 +19,12 @@ namespace CMP1005_WebAPIAssignment1_A00236910.Controllers
         {
             return Class1.Addition(num1, num2);
         }
+
+        //this method accepts two double data type numbers to return the result by subtracting second number from first number from CalculatorLogic shared library subtraction method
+        [HttpGet]
+        public double Subtract([FromQuery] double num1, [FromQuery] double num2)
+        {
+            return Class1.Subtraction(num1, num2);
+        }
     }
 }
