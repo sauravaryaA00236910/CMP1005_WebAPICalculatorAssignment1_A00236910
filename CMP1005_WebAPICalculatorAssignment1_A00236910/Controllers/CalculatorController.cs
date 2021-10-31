@@ -14,10 +14,10 @@ namespace CMP1005_WebAPIAssignment1_A00236910.Controllers
     public class CalculatorController : ControllerBase
     {
         //this method accepts two double data type numbers to return their sum from CalculatorLogic shared library addition method
-        //[HttpGet]
-        //public double Add([FromQuery] double num1, [FromQuery] double num2)
-        //{
-        //    return Class1.Addition(num1, num2);
-        //}
+        [HttpGet]
+        public double Add([FromQuery] double num1, [FromQuery] double num2)
+        {
+            return Class1.Addition(num1, num2);
+        }
     }
 }
