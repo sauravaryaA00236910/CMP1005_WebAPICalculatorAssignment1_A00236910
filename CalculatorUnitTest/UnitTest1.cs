@@ -7,9 +7,11 @@ namespace CalculatorUnitTest
     [TestClass]
     public class UnitTest1
     {
+        //************ Addition Tests ****************
 
-//the below 10 test methods are for Addition unit test checks
+        //the below 10 test methods are for Addition unit test checks
 
+        //Test 1
         [TestMethod]
         public void AdditionUnitTestCheck1()
         {
@@ -22,6 +24,7 @@ namespace CalculatorUnitTest
             Assert.AreEqual(desired, actualResult);
         }
 
+        //Test 2
         [TestMethod]
         public void AdditionUnitTestCheck2()
         {
@@ -34,6 +37,7 @@ namespace CalculatorUnitTest
             Assert.AreEqual(desired, actualResult);
         }
 
+        //Test 3
         [TestMethod]
         public void AdditionUnitTestCheck3()
         {
@@ -46,6 +50,7 @@ namespace CalculatorUnitTest
             Assert.AreEqual(desired, actualResult);
         }
 
+        //Test 4
         [TestMethod]
         public void AdditionUnitTestCheck4()
         {
@@ -58,6 +63,7 @@ namespace CalculatorUnitTest
             Assert.AreEqual(desired, actualResult);
         }
 
+        //Test 5
         [TestMethod]
         public void AdditionUnitTestCheck5()
         {
@@ -70,6 +76,7 @@ namespace CalculatorUnitTest
             Assert.AreEqual(desired, actualResult);
         }
 
+        //Test 6
         [TestMethod]
         public void AdditionUnitTestCheck6()
         {
@@ -82,6 +89,7 @@ namespace CalculatorUnitTest
             Assert.AreEqual(desired, actualResult);
         }
 
+        //Test 7
         [TestMethod]
         public void AdditionUnitTestCheck7()
         {
@@ -94,6 +102,7 @@ namespace CalculatorUnitTest
             Assert.AreEqual(desired, actualResult);
         }
 
+        //Test 8
         [TestMethod]
         public void AdditionUnitTestCheck8()
         {
@@ -106,6 +115,7 @@ namespace CalculatorUnitTest
             Assert.AreEqual(desired, actualResult);
         }
 
+        //Test 9
         [TestMethod]
         public void AdditionUnitTestCheck9()
         {
@@ -118,6 +128,7 @@ namespace CalculatorUnitTest
             Assert.AreEqual(desired, actualResult);
         }
 
+        //Test 10
         [TestMethod]
         public void AdditionUnitTestCheck10()
         {
@@ -126,6 +137,142 @@ namespace CalculatorUnitTest
             double desired = 99;
 
             double actualResult = Class1.Addition(num1, num2);
+
+            Assert.AreEqual(desired, actualResult);
+        }
+
+
+
+        //************ Subtraction Tests ****************
+
+        //the below 10 test methods are for Subtraction unit test checks
+
+        //Test 1
+        [TestMethod]
+        public void SubtractionUnitTestCheck1()
+        {
+            double num1 = 7;
+            double num2 = 4;
+            double desired = 3;
+
+            double actualResult = Class1.Subtraction(num1, num2);
+
+            Assert.AreEqual(desired, actualResult);
+        }
+
+        //Test 2
+        [TestMethod]
+        public void SubtractionUnitTestCheck2()
+        {
+            double num1 = 11;
+            double num2 = 3;
+            double desired = 8;
+
+            double actualResult = Class1.Subtraction(num1, num2);
+
+            Assert.AreEqual(desired, actualResult);
+        }
+
+        //Test 3
+        [TestMethod]
+        public void SubtractionUnitTestCheck3()
+        {
+            double num1 = 15;
+            double num2 = 4;
+            double desired = 11;
+
+            double actualResult = Class1.Subtraction(num1, num2);
+
+            Assert.AreEqual(desired, actualResult);
+        }
+
+        //Test 4
+        [TestMethod]
+        public void SubtractionUnitTestCheck4()
+        {
+            double num1 = 23;
+            double num2 = 11;
+            double desired = 12;
+
+            double actualResult = Class1.Subtraction(num1, num2);
+
+            Assert.AreEqual(desired, actualResult);
+        }
+
+        //Test 5
+        [TestMethod]
+        public void SubtractionUnitTestCheck5()
+        {
+            double num1 = 33;
+            double num2 = 9;
+            double desired = 24;
+
+            double actualResult = Class1.Subtraction(num1, num2);
+
+            Assert.AreEqual(desired, actualResult);
+        }
+
+        //Test 6
+        [TestMethod]
+        public void SubtractionUnitTestCheck6()
+        {
+            double num1 = 17;
+            double num2 = 11;
+            double desired = 6;
+
+            double actualResult = Class1.Subtraction(num1, num2);
+
+            Assert.AreEqual(desired, actualResult);
+        }
+
+        //Test 7
+        [TestMethod]
+        public void SubtractionUnitTestCheck7()
+        {
+            double num1 = 53;
+            double num2 = 7;
+            double desired = 46;
+
+            double actualResult = Class1.Subtraction(num1, num2);
+
+            Assert.AreEqual(desired, actualResult);
+        }
+
+        //Test 8
+        [TestMethod]
+        public void SubtractionUnitTestCheck8()
+        {
+            double num1 = 61;
+            double num2 = 3;
+            double desired = 58;
+
+            double actualResult = Class1.Subtraction(num1, num2);
+
+            Assert.AreEqual(desired, actualResult);
+        }
+
+        //Test 9
+        [TestMethod]
+        public void SubtractionUnitTestCheck9()
+        {
+            double num1 = 77;
+            double num2 = 5;
+            double desired = 72;
+
+            double actualResult = Class1.Subtraction(num1, num2);
+
+            Assert.AreEqual(desired, actualResult);
+        }
+
+        //Test 10
+        [TestMethod]
+        public void SubtractionUnitTestCheck10()
+        {
+            double num1 = 88;
+            double num2 = 11;
+            double desired = 77;
+
+            double actualResult = Class1.Subtraction(num1, num2);
 
             Assert.AreEqual(desired, actualResult);
         }
