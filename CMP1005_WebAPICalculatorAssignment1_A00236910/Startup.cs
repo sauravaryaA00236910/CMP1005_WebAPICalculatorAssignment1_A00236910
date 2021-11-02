@@ -27,6 +27,11 @@ namespace CMP1005_WebAPICalculatorAssignment1_A00236910
         {
 
             services.AddControllers();
+
+            services.AddSwaggerGen((options) =>
+            {
+                options.SwaggerDoc("v1", new Microsoft.OpenApi.Models.OpenApiInfo { Title = "Saurav's Api", Version="v1"});
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -46,6 +51,13 @@ namespace CMP1005_WebAPICalculatorAssignment1_A00236910
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
+            });
+
+            app.UseSwagger();
+
+            app.UseSwaggerUI(c =>
+            {
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "Saurav's Api V1");
             });
         }
     }
